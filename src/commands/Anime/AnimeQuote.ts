@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
             command: 'animequote',
             description: 'random anime quote.',
             aliases: ['aq'],
-            category: 'anime',
+            category: 'weeb',
             usage: `${client.config.prefix}animequote`,
             baseXp: 10
         })
