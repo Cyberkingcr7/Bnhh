@@ -21,7 +21,7 @@ export interface ICommand {
 }
 
 export type TCategory =
-    | 'anime'
+   
     | 'bots'
     | 'config'
     | 'dev'
@@ -32,3 +32,4 @@ export type TCategory =
     | 'media'
     | 'moderation'
     | 'category'
+    | 'anime'
