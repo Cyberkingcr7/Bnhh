@@ -32,4 +32,4 @@ export type TCategory =
     | 'media'
     | 'moderation'
     | 'category'
-    | 'anime'
+    | 'weeb'
