@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
                     index++
                 }
                 // return void M.reply(`🔍Command Used : ${Command.count} times\n Result for *${term}*\n\n\n ${result}`)
-                return void M.reply(`🔍 Result for *${term}*\n\n\n ${result}`)
+                return void M.reply(`「 GOOGLE SEARCH FOR ${term}」*\n\n\n ${result}`)
             })
             .catch((err) => {
                 M.reply(`🔍 Error: ${err}`)
