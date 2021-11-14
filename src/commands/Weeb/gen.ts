@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
             command: 'genshincharacter',
             description: `Gives you the data of the given genshin character.`,
             aliases: ['gchar', 'genshin'],
-            category: 'anime',
+            category: 'weeb',
             usage: `${client.config.prefix}gchar [name]`,
             baseXp: 50
         })
