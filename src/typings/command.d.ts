@@ -33,3 +33,4 @@ export type TCategory =
     | 'moderation'
     | 'category'
     | 'weeb'
+    | 'nsfw'
