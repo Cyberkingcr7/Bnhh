@@ -49,4 +49,4 @@ export default class Command extends BaseCommand {
         return void null
     }
 }
-© 2021 GitHub, Inc.
+
