@@ -1,56 +1,270 @@
+import { MessageType, Mimetype } from '@adiwajshing/baileys'
+
+import { join } from 'path'
+
 import MessageHandler from '../../Handlers/MessageHandler'
+
 import BaseCommand from '../../lib/BaseCommand'
+
 import WAClient from '../../lib/WAClient'
-import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
-import { MessageType, Mimetype } from "@adiwajshing/baileys";
+
+import { ISimplifiedMessage } from '../../typings'
+
 export default class Command extends BaseCommand {
+
     constructor(client: WAClient, handler: MessageHandler) {
+
         super(client, handler, {
+
             command: 'help',
+
             description: 'Displays the help menu or shows the info of the command provided',
+
             category: 'general',
+
             usage: `${client.config.prefix}help (command_name)`,
-            aliases: ['h'],
-            baseXp: 30
+
+            dm: true,
+
+            aliases: ['h']
+
         })
+
     }
 
-   run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
-            const n = [
-             './assets/images/help/help.mp4'
+    run = async (M: ISimplifiedMessage): Promise<void> => {
+
+        const bnh = [
+
+            './assets/images/help/help.mp4'
+
         ]
+
         let bnh = n[Math.floor(Math.random() * n.length)]
-        if (!parsedArgs.joined
-            }
-            let text = ` 🌊hello! *${M.sender.username}*, I'm bnh.\n\nMy prefix is - "${this.client.config.prefix}"\n\nThe usable commands are listed below.\n\n`
-            const keys = Object.keys(categories)
-            for (const key of keys)
-                text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
-key
-                ]
-                    .map((command) => command.config?.command)
-                    .join(', ')}\`\`\`\n\n`
-            return void this.client.sendMessage(M.from, { url: bnh }, MessageType.video, {
+
+        const mn=`
+
+🪆𝐊𝐨𝐧𝐢𝐜𝐡𝐢𝐰𝐚! 𝐈'𝐦 *𝙸𝚌𝚑𝚒𝚐𝚘-𝙱𝚘𝚝𝚝𝚘* , 𝐞𝐧𝐣𝐨𝐲 𝐮𝐬𝐢𝐧𝐠 𝐦𝐲 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬..! 
+
+🎋 𝐇𝐞𝐫𝐞 𝐚𝐫𝐞 𝐭𝐡𝐞 𝐋𝐢𝐬𝐭𝐞𝐝 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 : -
+
+🎊 𝐅𝐔𝐍 🎊
+
+🔖 ғᴀᴄᴛ  
+
+🔖 ǫᴜᴏᴛᴇ
+
+🔖 ғǫᴜᴏᴛᴇ      
+
+🔖 ᴡʜʏ
+
+🔖 ᴊᴏᴋᴇ        
+
+🔖 ᴛʀɪɢɢᴇʀ
+
+⛩️ 𝐖𝐄𝐄𝐁 ⛩️
+
+🏷️ᴡᴀɪғᴜ            
+
+🏷️ ɴᴇᴋᴏ
+
+🏷️ ᴀɴɪᴍᴇ-ʟɪɴᴇ      
+
+🏷️ ʟᴏʟɪ
+
+🏷️ ʀᴘᴀᴘᴇʀ          
+
+🏷️ ᴋɪᴛsᴜɴᴇ
+
+🏷️ ᴍᴇɢᴜᴍɪᴘᴀᴘᴇʀ
+
+🏷️ ʜᴜsʙᴀɴᴅʀᴏ
+
+🏷️ sʜɪɴᴏʙᴜ-ᴘᴀᴘᴇʀ
+
+🏷️ ɢᴇɴ𝐬ʜɪɴ ᴄʜᴀʀᴀᴄᴛᴇʀ
+
+🏷️ ᴀɴɪᴍᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ
+
+🎐 𝐆𝐄𝐍𝐄𝐑𝐀𝐋 🎐
+
+♐ ᴀᴅᴍɪɴs        
+
+♐ ᴅᴇʟᴇᴛᴇ
+
+♐ ᴇᴠᴇʀʏᴏɴᴇ       
+
+♐ ᴍᴏᴅs
+
+♐ ᴘʀᴏғɪʟᴇ        
+
+♐ xᴘ
+
+♐ ɢᴏᴏɢʟᴇ
+
+♐ ɪɴᴠɪᴛᴇ ʟɪɴᴋ
+
+♐ ʀᴇᴠᴏᴋᴇ
+
+♐ ᴜʀʙᴀɴ ᴅɪᴄᴛɪᴏɴᴀʀʏ
+
+🎼 𝐌𝐄𝐃𝐈𝐀 🎼
+
+🎶 ʟʏʀɪᴄs     
+
+🎶 sᴘᴏᴛɪғʏ
+
+🎶 ʏᴛᴀ         
+
+🎶 ʏᴛᴠ
+
+🎶 
+🎶 ᴘʟᴀʏ
+
+🎶 ᴘʟᴀʏᴠ
+
+🎶 ssᴡᴇʙ
+
+📃 𝐌𝐈𝐒𝐂 📃
+
+⛓️ ʜɪ          
+
+⛓️ ʀᴇᴛʀɪᴇᴠᴇ
+
+⛓️ ᴄʀʏᴘᴛᴏ
+
+⛓️ ɢɪᴛʜᴜʙ  
+
+⛓️ ᴡᴇᴀᴛʜᴇʀ
+
+⛓️ ᴇʟᴇᴍᴇɴᴛ
+
+📯 𝐌𝐎𝐃𝐄𝐑𝐀𝐓𝐈𝐎𝐍 📯
+
+📍ᴀᴄᴛɪᴠᴀᴛᴇ     
+
+📍ᴄʟᴏsᴇ
+
+📍ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇ   
+
+📍ᴏᴘᴇɴ
+
+📍ᴅᴇᴍᴏᴛᴇ        
+
+📍ᴘᴜʀɢᴇ
+
+📍ᴘʀᴏᴍᴏᴛᴇ       
+
+📍ʀᴇᴍᴏᴠᴇ
+
+📍ɢʀᴏᴜᴘ ᴄʜᴀɴɢᴇ
+
+⚠️ 𝐍𝐒𝐅𝐖 ⚠️
+
+🀄 ʙʟᴏᴡᴊᴏʙ    
+
+🀄 ɴsғᴡᴊᴏᴋᴇ
+
+🀄 ɴsғᴡ-ɴᴇᴋᴏ  
+
+🀄 ᴛʀᴀᴘ
+
+🀄 ɴsғᴡ-ᴡᴀɪғᴜ
+
+🎭 𝐑𝐄𝐀𝐂𝐓𝐈𝐎𝐍𝐒 🎭
+
+🎗️ ʙɪᴛᴇ        
+
+🎗️ ʜɪɢʜғɪᴠᴇ
+
+🎗️ ʙʟᴜsʜ       
+
+🎗️ sᴍᴜɢ
+
+🎗️ ʙᴏɴᴋ        
+
+🎗️ ʜᴜɢ
+
+🎗️ ʙᴜʟʟʏ       
+
+🎗️ ᴋɪᴄᴋ
+
+🎗️ ᴄʀɪɴɢᴇ      
+
+🎗️ ᴋɪʟʟ
+
+🎗️ ᴄʀʏ         
+
+🎗️ ᴋɪss
+
+🎗️ ᴄᴜᴅᴅʟᴇ      
+
+🎗️ ʟɪᴄᴋ
+
+🎗️ ᴅᴀɴᴄᴇ       
+
+🎗️ ᴘᴀᴛ
+
+🎗️ ᴇᴀᴛ         
+
+🎗️ ᴘᴏᴋᴇ
+
+🎗️ ʜᴀɴᴅʜᴏʟᴅ    
+
+🎗️ sʟᴀᴘ
+
+🎗️ ʜᴀᴘᴘʏ       
+
+🎗️ sᴍɪʟᴇ
+
+🎗️ ᴜʟᴛʀᴀʜᴜɢ    
+
+🎗️ ᴡᴀᴠᴇ
+
+🎗️ ᴡɪɴᴋ        
+
+🎗️ ʏᴇᴇᴛ
+
+🪦 𝐔𝐓𝐋𝐈𝐒 🪦
+
+⏳ ʙʟᴜʀ    
+
+⏳ sᴛɪᴄᴋᴇʀ
+
+⏳ sᴛᴇᴀʟ   
+
+⏳ sᴜʙʀᴇᴅ
+
+🖥️ 𝐃𝐄𝐕 🖥️
+
+💻 ʙᴀɴ
+
+💻 ᴅɪ𝐬ᴀʙʟᴇ
+
+💻 ᴇɴᴀʙʟᴇ
+
+💻 ᴇᴠᴀʟ
+
+💻 ʟᴇᴀᴠᴇ
+
+💻 sᴛᴀᴛᴜs
+
+💻 ᴜɴʙᴀɴ
+
+ 
+
+𓊈𒆜𝐈𝐜𝐡𝐢𝐠𝐨-𝐁𝐨𝐭𝐭𝐨𒆜𓊉
+
+`
+
+        return void this.client.sendMessage(M.from, { url: bnh }, MessageType.video, {quoted:M.WAMessage,
+
             mimetype: Mimetype.gif,
-            caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
-            )
-        }
-        const key = parsedArgs.joined.toLowerCase()
-        const command = this.handler.commands.get(key) || this.handler.aliases.get(key)
-        if (!command) return void M.reply(`No Command of Alias Found | "${key}"`)
-        const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
-        M.reply(
-            `🎫 *Command:* ${this.client.util.capitalize(command.config?.command)}\n🎗️ *Status:* ${
-                state ? 'Disabled' : 'Available'
-            }\n🀄 *Category:* ${this.client.util.capitalize(command.config?.category || '')}${
-                command.config.aliases && command.config.command !== 'react'
-                    ? `\n🍥 *Aliases:* ${command.config.aliases.map(this.client.util.capitalize).join(', ')}`
-                    : ''
-            }\n🃏 *Group Only:* ${this.client.util.capitalize(
-                JSON.stringify(!command.config.dm ?? true)
-            )}\n🎀 *Usage:* ${command.config?.usage || ''}\n\n🔖 *Description:* ${command.config?.description || ''}`
+
+            caption:mn }
+
         )
+
     }
 
-    emojis = ['📺', '🤖', '⚙️', '👨‍💻', '📚', '👻', '🎲', '😶‍🌫️', '📼', '🦉', '🪜']
 }
