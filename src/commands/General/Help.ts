@@ -40,7 +40,7 @@ export default class Command extends BaseCommand {
 
         ]
 
-        let bnh = n[Math.floor(Math.random() * n.length)]
+        let n = n[Math.floor(Math.random() * n.length)]
 
         const mn=`
 
