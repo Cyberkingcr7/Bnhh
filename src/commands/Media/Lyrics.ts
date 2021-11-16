@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
        
         if (!joined) return void M.reply('Give me a song name to fetch the lyrics, Baka!')
         const chitoge = joined.trim()
-        const search = await solenolyrics.requestLyricsFor(`chitoge`)
+       const { error, data } = await getLyrics(chitoge)
         if(search.error) return void M.reply(`Couldn't find any matching song results.`)
         const lyrics = await search[0].lyrics()
         let text = `🎀 *Title: ${search[0].title}*\n\n`
