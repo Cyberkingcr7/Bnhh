@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
         let bnh = n[Math.floor(Math.random() * n.length)]
         const mn=`
 Konnichiwa ${M.sender.username}
-    this is ${this.client.config.prefix}fun
+    this is ${this.client.config.prefix}nsfw
  Shows the nsfw info
    
         「 Nsfw 18+ 」
