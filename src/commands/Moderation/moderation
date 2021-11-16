@@ -8,12 +8,12 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'fun',
+            command: 'moderation',
             description: 'shows fun section',
-            category: 'fun',
+            category: 'moderation',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
-            aliases: ['5']
+            aliases: ['9']
         })
     }
 
@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
         let bnh = n[Math.floor(Math.random() * n.length)]
         const mn=`
 Konnichiwa ${M.sender.username}
-    this is ${this.client.config.prefix}moderatiom
+    this is ${this.client.config.prefix}moderation
  Shows the fun info
    
         「 moderation 」
