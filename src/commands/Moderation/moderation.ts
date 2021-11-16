@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
             category: 'moderation',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
-            aliases: ['9']
+            aliases: ['8']
         })
     }
 
@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
         const mn=`
 Konnichiwa ${M.sender.username}
     this is ${this.client.config.prefix}moderation
- Shows the fun info
+ Shows the moderation info
    
         「 moderation 」
  -「 ${this.client.config.prefix}activate : cmd , invitelink , nsfw , mod , events , safe 」
