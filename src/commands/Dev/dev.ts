@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'dev',
-            description: 'shows bot section',
+            description: 'shows dev section',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
@@ -27,7 +27,7 @@ Konnichiwa ${M.sender.username}
     this is ${this.client.config.prefix}dev
  Shows the bots info
    
-        「 Bot 」
+        「 dev 」
  -「 ${this.client.config.prefix}Ban 」
  -「 ${this.client.config.prefix}Eval 」
  -「 ${this.client.config.prefix}Status 」
