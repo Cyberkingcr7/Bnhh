@@ -10,10 +10,10 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'genera;',
             description: 'shows general section',
-            category: 'fun',
+            category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
-            aliases: ['5']
+            aliases: ['6']
         })
     }
 
@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
         const mn=`
 Konnichiwa ${M.sender.username}
     this is ${this.client.config.prefix}general
- Shows the fun info
+ Shows the general info
    
         「 General 」
  -「 ${this.client.config.prefix}admin 」
@@ -34,7 +34,7 @@ Konnichiwa ${M.sender.username}
  -「 ${this.client.config.prefix}hi 」
  -「 ${this.client.config.prefix}invitelink 」
  -「 ${this.client.config.prefix}mod 」
-  -「 ${this.client.config.prefix}profile 」
+ -「 ${this.client.config.prefix}profile 」
  -「 ${this.client.config.prefix}xp 」
 
   *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
