@@ -27,7 +27,7 @@ Konnichiwa ${M.sender.username}
     this is ${this.client.config.prefix}Config
  Shows the config info
    
-        「 Bot 」
+        「 config 」
  -「 ${this.client.config.prefix}enable 」
  -「 ${this.client.config.prefix}disable 」
 
