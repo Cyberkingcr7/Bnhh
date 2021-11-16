@@ -104,7 +104,7 @@ export default class MessageHandler {
                                 M.sender.username
                             )} in ${M.groupMetadata?.subject || ''}`
                         )
-                        return void (await M.reply('lol') this.client.groupRemove(M.from, [M.sender.jid]))
+                        return void (await M.reply('lol'), this.client.groupRemove(M.from, [M.sender.jid]))
                     }
                 })
             }
