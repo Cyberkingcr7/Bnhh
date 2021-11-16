@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'dev',
             description: 'shows dev section',
-            category: 'general',
+            category: 'dev',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
             aliases: ['3']
@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
         const mn=`
 Konnichiwa ${M.sender.username}
     this is ${this.client.config.prefix}dev
- Shows the bots info
+ Shows the dev info
    
         「 dev 」
  -「 ${this.client.config.prefix}Ban 」
