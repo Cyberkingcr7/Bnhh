@@ -6,7 +6,7 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'everyone',
+            command: 'ping',
             description: 'Tags all users in group chat',
             aliases: ['all', 'tagall'],
             category: 'general',
