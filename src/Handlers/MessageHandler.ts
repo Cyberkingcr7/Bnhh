@@ -90,6 +90,26 @@ export default class MessageHandler {
             return void this.client.log(err.message, true)
         }
     }
+       moderate = async (M: ISimplifiedMessage): Promise<void> => {
+        if (M.sender.isAdmin) return void null
+        if (M.urls.length) {
+            const groupinvites = M.urls.filter((url) => url.includes('chat.whatsapp.com'))
+            if (groupinvites.length) {
+                groupinvites.forEach(async (invite) => {
+                    const splitInvite = invite.split('/')
+                    const z = await this.client.groupInviteCode(M.from)
+                    if (z !== splitInvite[splitInvite.length - 1]) {
+                        this.client.log(
+                            `${chalk.blueBright('MOD')} ${chalk.green('Group Invite')} by ${chalk.yellow(
+                                M.sender.username
+                            )} in ${M.groupMetadata?.subject || ''}`
+                        )
+                        return void (await M.reply('lol') this.client.groupRemove(M.from, [M.sender.jid]))
+                    }
+                })
+            }
+        }
+    }
 
    loadCommands = (): void => {
         this.client.log(chalk.green('Loading Commands...'))
