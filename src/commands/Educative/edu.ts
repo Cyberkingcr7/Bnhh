@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'educative',
-            description: 'shows bot section',
+            description: 'shows educative section',
             category: 'educative',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
         let bnh = n[Math.floor(Math.random() * n.length)]
         const mn=`
 Konnichiwa ${M.sender.username}
-    this is ${this.client.config.prefix}dev
+    this is ${this.client.config.prefix}educative
  Shows the educative info
    
         「 Educative 」
