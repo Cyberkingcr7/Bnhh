@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
             category: 'media',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
-            aliases: ['5']
+            aliases: ['7']
         })
     }
 
@@ -34,7 +34,7 @@ Konnichiwa ${M.sender.username}
  -「 ${this.client.config.prefix}retrieve 」
  -「 ${this.client.config.prefix}re 」
  -「 ${this.client.config.prefix}ship 」
-  -「 ${this.client.config.prefix}trigger 」
+ -「 ${this.client.config.prefix}trigger 」
  -「 ${this.client.config.prefix}advice 」
  -「 ${this.client.config.prefix}jail 」
  -「 ${this.client.config.prefix}why 」
