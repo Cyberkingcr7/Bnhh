@@ -30,7 +30,7 @@ Konnichiwa im a bot , enjoy your day!!
  -「 Bots 」
  -「 Config 」
  -「 Dev 」
- -「 Fun && games 」
+ -「 Fun 」
  -「 Educative 」
  -「 General 」
  -「 Media 」
@@ -42,10 +42,10 @@ Konnichiwa im a bot , enjoy your day!!
 │- ᴜꜱᴇʀ: *${M.sender.username}*
 │- ɴᴀᴍᴇ: BNH
 │- ᴘʀᴇꜰɪx: ${this.client.config.prefix}
-│- ᴏᴡɴᴇʀ: 27780993470 
+│- ᴏᴡɴᴇʀ: wa.me/27780993470 
 │- github: https://github.com/Cyberkingcr7/Bnh
 ╰──────────────────────────
- *Note: Use ${this.client.config.prefix}help <Section_name> to view the section info*
+ *Note: Use ${this.client.config.prefix}help <Section_name> or <Section_number> to view the section info. E.g ${this.client.config.prefix}help bot/1*
      
      
 `
