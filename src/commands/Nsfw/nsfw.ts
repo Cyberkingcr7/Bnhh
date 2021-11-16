@@ -10,10 +10,10 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'nsfw',
             description: 'shows nsfw section',
-            category: 'fun',
+            category: 'nsfw',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
-            aliases: ['10']
+            aliases: ['9']
         })
     }
 
