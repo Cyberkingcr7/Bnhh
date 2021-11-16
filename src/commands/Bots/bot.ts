@@ -28,10 +28,10 @@ Konnichiwa ${M.sender.username}
  Shows the bots info
    
         「 Bot 」
- -「 Entropy 」
- -「 guide 」
- -「 info 」
- -「 void 」
+ -「 ${this.client.config.prefix}Entropy 」
+ -「 ${this.client.config.prefix}guide 」
+ -「 ${this.client.config.prefix}info 」
+ -「 ${this.client.config.prefix}void 」
 
   *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
         return void this.client.sendMessage(M.from, { url: bnh }, MessageType.video, {quoted:M.WAMessage,
