@@ -34,7 +34,7 @@ Konnichiwa ${M.sender.username}
  -「 ${this.client.config.prefix}quote 」
  -「 ${this.client.config.prefix}re 」
  -「 ${this.client.config.prefix}ship 」
-  -「 ${this.client.config.prefix}trigger 」
+ -「 ${this.client.config.prefix}trigger 」
  -「 ${this.client.config.prefix}advice 」
  -「 ${this.client.config.prefix}jail 」
  -「 ${this.client.config.prefix}why 」
