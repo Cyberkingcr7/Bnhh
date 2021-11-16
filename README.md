@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://ibb.co/wQ4GK21"><img src="https://i.ibb.co/HPqwr9Q/whatsapp-botto-void-init.png" alt="whatsapp-botto-void-init" border="0"></a>
+<a href="https://ibb.co/wQ4GK21"><img src="https://uploader.hardianto.xyz/uploads/recfile-1633897234298.jpg" alt="whatsapp-botto-BNH" border="0"></a>
 
 # **BNH :*ANIME THEMED BOTTO**
 
@@ -47,11 +47,6 @@ Button :
 -   Make sure to follow the ESLint Rules while editing the code and run
     `yarn run prettier-format` before opening PRs
 
-## 🤝 Contributors
-
-<a href="https://github.com/PrajjwalDatir/Kaoi/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=PrajjwalDatir/Kaoi" />
-</a>
 
 ### 🟢 WhatsApp Group
 
