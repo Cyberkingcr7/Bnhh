@@ -23,9 +23,8 @@ export default class Command extends BaseCommand {
         ]
         let bnh = n[Math.floor(Math.random() * n.length)]
         const mn=`
-Konnichiwa *${M.sender.username}* im bnh 
-     My prefix is "${this.client.config.prefix}"
- The usable commands are listed below
+Konnichiwa im a bot , enjoy your day!! 
+ My usable commands are listed below
    
         「 Sections 」
  -「 Bots 」
@@ -39,6 +38,13 @@ Konnichiwa *${M.sender.username}* im bnh
  -「 Weeb 」
  -「 Nsfw (18+) 」
  
+ ─────────────────────────
+│- ᴜꜱᴇʀ: *${M.sender.username}*
+│- ɴᴀᴍᴇ: BNH
+│- ᴘʀᴇꜰɪx: ${this.client.config.prefix}
+│- ᴏᴡɴᴇʀ: 27780993470 
+│- github: https://github.com/Cyberkingcr7/Bnh
+╰──────────────────────────
  *Note: Use ${this.client.config.prefix}help <Section_name> to view the section info*
      
      
