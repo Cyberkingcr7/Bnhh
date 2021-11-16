@@ -32,13 +32,14 @@ Konnichiwa ${M.sender.username}
  -「 ${this.client.config.prefix}google 」
  -「 ${this.client.config.prefix}play 」
  -「 ${this.client.config.prefix}retrieve 」
- -「 ${this.client.config.prefix}re 」
- -「 ${this.client.config.prefix}ship 」
- -「 ${this.client.config.prefix}trigger 」
+-「 ${this.client.config.prefix}screenshot 」
  -「 ${this.client.config.prefix}advice 」
- -「 ${this.client.config.prefix}jail 」
- -「 ${this.client.config.prefix}why 」
- -「 ${this.client.config.prefix}chess 」
+ -「 ${this.client.config.prefix}take : crop , stretch , author/pack 」
+ -「 ${this.client.config.prefix}subred 」
+ -「 ${this.client.config.prefix}yta 」
+ -「 ${this.client.config.prefix}ytv 」
+ -「 ${this.client.config.prefix}spotify 」
+ 
   *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
         return void this.client.sendMessage(M.from, { url: bnh }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
