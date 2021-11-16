@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const term = joined.trim()
         return void (await M.reply(
-            `${M.groupMetadata?.subject || '*EVERYONE*'}\n*term*\n`,
+            `${M.groupMetadata?.subject || '*EVERYONE*'}\n*(term)*\n`,
             undefined,
             undefined,
             M.groupMetadata?.participants.map((user) => user.jid)
