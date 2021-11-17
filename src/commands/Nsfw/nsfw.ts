@@ -27,7 +27,7 @@ Konnichiwa ${M.sender.username}
     this is ${this.client.config.prefix}nsfw
  Shows the nsfw info
    
-        「 Nsfw 18+ 」
+        「 Nsfw 🔞 」
  -「 ${this.client.config.prefix}bj 」
  -「 ${this.client.config.prefix}darkjoke 」
  -「 ${this.client.config.prefix}lesbian 」
