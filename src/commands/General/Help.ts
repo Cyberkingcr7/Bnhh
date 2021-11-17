@@ -23,20 +23,20 @@ export default class Command extends BaseCommand {
         ]
         let bnh = n[Math.floor(Math.random() * n.length)]
         const mn=`
-Konnichiwa im a bot , enjoy your day!! 
+Konnichiwa im a anime botto , enjoy your day!! 
  My usable commands are listed below
    
         「 Sections 」
- -「 Bots 」
- -「 Config 」
- -「 Dev 」
- -「 Fun 」
- -「 Educative 」
- -「 General 」
- -「 Media 」
- -「 Moderation 」
- -「 Weeb 」
- -「 Nsfw (18+) 」
+1 -「 Bots 」
+2 -「 Config 」
+3-「 Dev 」
+4 -「 Fun 」
+5 -「 Educative 」
+6-「 General 」
+7 -「 Media 」
+8-「 Moderation 」
+9-「 Weeb 」
+10-「 Nsfw (18+) 」
  
  ─────────────────────────
 │- ᴜꜱᴇʀ: *${M.sender.username}*
@@ -45,7 +45,7 @@ Konnichiwa im a bot , enjoy your day!!
 │- ᴏᴡɴᴇʀ: wa.me/27780993470 
 │- github: https://github.com/Cyberkingcr7/Bnh
 ╰──────────────────────────
- *Note: Use ${this.client.config.prefix}help <Section_name> or <Section_number> to view the section info. E.g ${this.client.config.prefix}help bot/1*
+ *Note: Use ${this.client.config.prefix}<Section_name> or <Section_number> to view the section info. E.g ${this.client.config.prefix}bot/1*
      
      
 `
