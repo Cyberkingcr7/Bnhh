@@ -26,24 +26,23 @@ export default class Command extends BaseCommand {
 Konnichiwa im a anime botto , enjoy your day!! 
  My usable commands are listed below
    
-        「 Sections 」
-1 -「 Bots 」
-2 -「 Config 」
-3-「 Dev 」
-4 -「 Fun 」
-5 -「 Educative 」
-6-「 General 」
-7 -「 Media 」
-8-「 Moderation 」
-9-「 Weeb 」
-10-「 Nsfw (18+) 」
+        ☆ Sections ☆
+🕊️1 -「 Bots 」
+🕊️2 -「 Config 」
+🕊️3-「 Dev 」
+🕊️4 -「 Fun 」
+🕊️5 -「 Educative 」
+🕊️6-「 General 」
+🕊️7 -「 Media 」
+🕊️8-「 Moderation 」
+🕊️9-「 Weeb 」
+🕊️10-「 Nsfw (18+) 」
  
  ─────────────────────────
-│- ᴜꜱᴇʀ: *${M.sender.username}*
-│- ɴᴀᴍᴇ: BNH
-│- ᴘʀᴇꜰɪx: ${this.client.config.prefix}
-│- ᴏᴡɴᴇʀ: wa.me/27780993470 
-│- github: https://github.com/Cyberkingcr7/Bnh
+│- ☆ᴜꜱᴇʀ: *${M.sender.username}*
+│- ☆ɴᴀᴍᴇ: ᴄᴏʟᴇ
+│- ☆ᴘʀᴇꜰɪx: ${this.client.config.prefix}
+│- ☆ᴏᴡɴᴇʀ: ꜱᴀᴠᴀɢᴇ ɢᴏᴅ
 ╰──────────────────────────
  *Note: Use ${this.client.config.prefix}<Section_name> or <Section_number> to view the section info. E.g ${this.client.config.prefix}bot/1*
      
