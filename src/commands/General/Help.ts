@@ -25,44 +25,37 @@ export default class Command extends BaseCommand {
         const mn=`
 ─────────────────────────
 
-│- ᴜꜱᴇʀ: *${M.sender.username}*
+│- *ᴜꜱᴇʀ: ${M.sender.username}*
 
-│- ɴᴀᴍᴇ: *ᴄᴏʟᴇ*
+│- *ɴᴀᴍᴇ: ᴄᴏʟᴇ*
 
-│- ᴘʀᴇꜰɪx: *${this.client.config.prefix}*
+│- *ᴘʀᴇꜰɪx: ${this.client.config.prefix}*
 
-│- ᴏᴡɴᴇʀ: *ꜱᴀᴠᴀɢᴇ ɢᴏᴅ*
+│- *ᴏᴡɴᴇʀ: ꜱᴀᴠᴀɢᴇ ɢᴏᴅ*
 
 ╰──────────────────────────
 
 *☆[ SECTIONS ]☆*
 
-1. Bots 🤖
+*1. Bots 🤖*
 
-2. Config ⚙️
+*2. Config ⚙️*
 
-3. Dev 🌟
+*3. Dev 🌟*
 
-4. Fun 💘
+*4. Fun 💘*
 
-5. Educative 👨‍🏫
+*5. Educative 👨‍🏫*
 
-6. General 🎃
+*6. General 🎃*
 
-7. Media 🖤
+*7. Media 🖤*
 
-8. Moderation 👑
+*8. Moderation 👑*
 
-9. Weeb 💀
+*9. Weeb 💀*
 
-10. Nsfw 🔞
+*10. Nsfw 🔞*
 
  *Note: Use ${this.client.config.prefix}<Section_name> or <Section_number> to view the section info. E.g ${this.client.config.prefix}bot/1*
      
-`
-        return void this.client.sendMessage(M.from, { url: bnh }, MessageType.video, {quoted:M.WAMessage,
-            mimetype: Mimetype.gif,
-            caption:mn }
-        )
-    }
-}
