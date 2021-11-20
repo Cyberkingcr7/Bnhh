@@ -78,8 +78,8 @@ export default class Command extends BaseCommand {
             })()
             return {
                 categories,
-                pack: pack[1] || '👾 For You ',
-                author: pack[2] || 'By suijin 👾',
+                pack: pack[1] || '👾 To You ',
+                author: pack[2] || 'From Savage God 👾',
                 quality,
                 type: StickerTypes[
                     parsedArgs.flags.includes('--crop') || parsedArgs.flags.includes('--c')
