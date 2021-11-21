@@ -53,7 +53,7 @@ export default class Command extends BaseCommand {
 
 *8. Moderation 👑*
 
-*9. Weeb 💀*
+*9. Weeb 👀*
 
 *10. Nsfw 🔞*
 
