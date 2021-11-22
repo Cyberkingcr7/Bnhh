@@ -18,11 +18,11 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        const n = [
 
-        ]
-        let bnh = n[Math.floor(Math.random() * n.length)]
-        const mn=`
+
+        
+
+        M.reply('
 ─────────────────────────
 
 │- *ᴜꜱᴇʀ: ${M.sender.username}*
@@ -58,4 +58,7 @@ export default class Command extends BaseCommand {
 *10. Nsfw 🔞*
 
  *Note: Use ${this.client.config.prefix}<Section_name> or <Section_number> to view the section info. E.g ${this.client.config.prefix}bot/1*
-     
+     ') 
+
+} 
+} 
