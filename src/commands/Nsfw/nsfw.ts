@@ -31,8 +31,8 @@ Konnichiwa ${M.sender.username}
  -「 ${this.client.config.prefix}bj 」
  -「 ${this.client.config.prefix}darkjoke 」
  -「 ${this.client.config.prefix}lesbian 」
- -「 ${this.client.config.prefix}n-neko 」
- -「 ${this.client.config.prefix}n-waifu 」
+ -「 ${this.client.config.prefix}nneko 」
+ -「 ${this.client.config.prefix}nwaifu 」
  -「 ${this.client.config.prefix}trap 」
 
   *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
