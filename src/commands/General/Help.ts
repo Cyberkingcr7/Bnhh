@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/images/help/help.mp4'
+
         ]
         let bnh = n[Math.floor(Math.random() * n.length)]
         const mn=`
