@@ -3,6 +3,7 @@ import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ISimplifiedMessage } from '../../typings'
 import axios from 'axios'
+import request from "../../lib/request";
 import { MessageType } from '@adiwajshing/baileys'
 
 export default class Command extends BaseCommand {
