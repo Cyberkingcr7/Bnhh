@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
 
 const term = joined.trim()
-const key = 031833f49e0606eadf6912cc;
+const key = '031833f49e0606eadf6912cc';
 const { data } = await axios.get('https://api.lolhuman.xyz/api/textprome/strawberry?apikey={key}&text={term}') 
 
         const buffer = await request.buffer(data.url).catch((e) => {
