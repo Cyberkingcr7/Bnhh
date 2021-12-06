@@ -21,7 +21,7 @@ export default class WAClient extends Base {
     assets = new Map<string, Buffer>()
     constructor(public config: IConfig) {
         super()
-        this.browserDescription[0] = 'WhatsApp-Botto-Void'
+        this.browserDescription[0] = 'made-by-suijin'
         this.version = [3, 3234, 9];
         this.logger.level = 'fatal'
 
@@ -137,7 +137,7 @@ export default class WAClient extends Base {
 
     log = (text: string, error?: boolean): void => {
         console.log(
-            chalk[error ? 'red' : 'green']('[KAOI]'),
+            chalk[error ? 'red' : 'green']('[BNH]'),
             chalk.blue(moment(Date.now() * 1000).format('DD/MM HH:mm:ss')),
             chalk.yellowBright(text)
         )
