@@ -39,6 +39,7 @@ Konnichiwa ${M.sender.username}
  -「 ${this.client.config.prefix}promote 」
  -「 ${this.client.config.prefix}purge 」
  -「 ${this.client.config.prefix}revoke 」
+-「${this.client.config.prefix}add 」
   *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
         return void this.client.sendMessage(M.from, { url: bnh }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
