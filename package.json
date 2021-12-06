@@ -1,11 +1,11 @@
 {
-    "name": "kaoi",
+    "name": "bnh",
     "version": "2.0.0",
     "description": "A fully Object Oriented WhatsApp bot built with TypeScript",
     "main": "dist/kaoi.js",
     "scripts": {
         "build": "tsc -p .",
-        "start": "node dist/kaoi.js",
+        "start": "node dist/bnh.js",
         "lint": "eslint \"src/**/*.ts\"",
         "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
         "postinstall": "yarn run build"
