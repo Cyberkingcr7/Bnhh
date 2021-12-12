@@ -35,6 +35,7 @@ Konnichiwa ${M.sender.username}
  -「 ${this.client.config.prefix}leave 」
  -「 ${this.client.config.prefix}unban 」
 -「 ${this.client.config.prefix}bc 」
+
   *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
         return void this.client.sendMessage(M.from, { url: bnh }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
