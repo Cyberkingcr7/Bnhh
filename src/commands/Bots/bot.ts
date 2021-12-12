@@ -32,6 +32,7 @@ Konnichiwa ${M.sender.username}
  -「 ${this.client.config.prefix}guide 」
  -「 ${this.client.config.prefix}info 」
  -「 ${this.client.config.prefix}void 」
+      Credits to my friend prajjwal 
 
   *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
         return void this.client.sendMessage(M.from, { url: bnh }, MessageType.video, {quoted:M.WAMessage,
