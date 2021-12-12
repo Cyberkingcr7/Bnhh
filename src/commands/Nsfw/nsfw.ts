@@ -22,6 +22,10 @@ export default class Command extends BaseCommand {
             './assets/images/help/nsfw.mp4'
         ]
         let bnh = n[Math.floor(Math.random() * n.length)]
+if (!(await this.client.getGroupData(M.from)).nsfw)
+			return void M.reply(
+				`Don't be a pervert, Baka! This is not an NSFW group.`
+			);
         const mn=`
 Konnichiwa ${M.sender.username}
     this is ${this.client.config.prefix}nsfw
