@@ -39,6 +39,7 @@ Konnichiwa ${M.sender.username}
  -「 ${this.client.config.prefix}jail 」
  -「 ${this.client.config.prefix}why 」
  -「 ${this.client.config.prefix}chess 」
+ -「 ${this.client.config.prefix}igstalk <username>」
 
   *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
         return void this.client.sendMessage(M.from, { url: bnh }, MessageType.video, {quoted:M.WAMessage,
