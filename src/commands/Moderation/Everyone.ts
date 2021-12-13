@@ -1,7 +1,8 @@
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
-import { ISimplifiedMessage } from '../../typings'
+import { IParsedArgs, ISimplifiedMessage } from "../../typings";
+import { MessageType, Mimetype } from "@adiwajshing/baileys";
 
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
@@ -16,10 +17,14 @@ export default class Command extends BaseCommand {
         })
     }
 
-    run = async (M: ISimplifiedMessage): Promise<void> => {
+    run = async (
+		M: ISimplifiedMessage,
+		{ joined }: IParsedArgs
+	): Promise<void> => {
+const term = joined.trim() 
         
         return void (await M.reply(
-            `${M.groupMetadata?.subject || '*EVERYONE*'}\n\n`,
+            `${term}\n\n`,
             undefined,
             undefined,
             M.groupMetadata?.participants.map((user) => user.jid)
