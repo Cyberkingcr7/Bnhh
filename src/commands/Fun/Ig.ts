@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         
         if (!joined) return void M.reply('Provide the keywords you wanna search, Baka!')
         const term = joined.trim()
-        console.log(chitoge)
+        console.log(term)
         const { data } = await axios.get(`https://api-xcoders.xyz/api/stalk/ig?username=${term}&apikey=LJowCce5Pn`)
         if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn\'t find'))
         const buffer = await request.buffer(data.result.profile_url).catch((e) => {
