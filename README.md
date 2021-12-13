@@ -55,6 +55,8 @@ Button :
 
 
 
+-  Adding bnh guidelines 
+-  Adding bnh guidelines 
 -  Updating features md
 -  Make bot ux colorful and better 
 -  Adding commands 
