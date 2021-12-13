@@ -51,10 +51,13 @@ Button :
 
 
 ### 🟢 TO DO
-Adding bnh guidelines 
-Updating features md
-Make bot ux colorful and better 
-Adding commands 
+
+
+
+
+-  Updating features md
+-  Make bot ux colorful and better 
+-  Adding commands 
 
 
 
