@@ -42,7 +42,7 @@ Konnichiwa im a anime botto , enjoy your day!!
 │- ᴜꜱᴇʀ: *${M.sender.username}*
 │- ɴᴀᴍᴇ: BNH
 │- ᴘʀᴇꜰɪx: ${this.client.config.prefix}
-│- ᴏᴡɴᴇʀ: wa.me/27780993470 
+│- ᴏᴡɴᴇʀ: ${this.client.config.prefix}mods
 │- github: https://github.com/Cyberkingcr7/Bnh
 ╰──────────────────────────
  *Note: Use ${this.client.config.prefix}<Section_name> or <Section_number> to view the section info. E.g ${this.client.config.prefix}bot/1*
