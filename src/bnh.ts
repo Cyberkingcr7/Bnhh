@@ -16,11 +16,11 @@ if (!process.env.MONGO_URI) throw new Error('MONGO URL IS NOT PROVIDED')
 const client = new WAClient({
     name: process.env.NAME || 'bnh',
     session: process.env.SESSION || 'bnh',
-    prefix: process.env.PREFIX || '#',
+    prefix: process.env.PREFIX || '!',
     mods: (process.env.MODS || '').split(',').map((number) => `${number}@s.whatsapp.net`),
     gkey: process.env.GOOGLE_API_KEY || '',
     chatBotUrl: process.env.CHAT_BOT_URL || '',
-    geniusKey: process.env.GENIUS_KEY || "",
+    geniusKey: process.env.GENIUS_KEY || "JaPyGlOPNqyUjFlU-LS8IhRlVDAcAnr3tcXoIzbW4WdRG70Zg4PE4VuZo9VlzaWL",
 })
 client.log('Starting...')
 
