@@ -33,6 +33,8 @@ Button :
 -   Built with [Baileys](https://github.com/adiwajshing/baileys) (The Best
     WhatsApp Library Out There)
 
+# please star this project and follow me if you liked it
+
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
