@@ -42,7 +42,7 @@
             "required": false
          },
       "GENIUS_KEY": {
-          "description": "Your access token of genius.com to fetch the lyrics",
+          "description": "Paste your access token or skip this option it will automatically give lyrics",
           "required": false
       }
   },
