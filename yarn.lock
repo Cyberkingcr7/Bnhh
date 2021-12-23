@@ -52,6 +52,18 @@
   integrity sha512-OvwMLqNXkCXSz1kSm58sEsNuhqOx/fKpnUnKnFB5v8uDda5bLNEHNgKPvhDN6IU0LDcnHQ90LlJ0Q6jnyBSIBA==
   dependencies:
     regenerator-runtime "^0.13.4"
+    
+    "@canvacord/assets@^2.0.5":
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/@canvacord/assets/-/assets-2.1.0.tgz"
+  integrity sha512-VwPVQrMz/nVLiAlkqUuWI+wuOBptpik2g+eIj2ADOsiK2yiLN/4ZSL+V0SQUidB3OLfAmuY949kCJ788CD5P9g==
+
+"@canvacord/emoji-parser@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@canvacord/emoji-parser/-/emoji-parser-1.0.1.tgz"
+  integrity sha512-Lb3xatdd91MR9tU4sicgrxxKg+/rVD1zKTOh55bmVF2Ri5X8vHTV+jNHTvRzkomGpyepGM+7qA4xMvG8ZqtO8g==
+  dependencies:
+    twemoji-parser "^13.0.0"
 
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
