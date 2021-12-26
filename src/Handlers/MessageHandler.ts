@@ -104,7 +104,7 @@ export default class MessageHandler {
                                 M.sender.username
                             )} in ${M.groupMetadata?.subject || ''}`
                         )
-                        return void M.reply('「 ANTI LINK 」\n you have sent a grouplink $M.sender.username} \n you will be removed!!'); (await this.client.groupRemove(M.from, [M.sender.jid]))
+                       return void (await this.client.groupRemove(M.from, [M.sender.jid]))
                     }
                 })
             }
