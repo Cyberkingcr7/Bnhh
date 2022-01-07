@@ -1,26 +1,26 @@
 {
     "name": "chitoge",
     "version": "3.0.0",
-    "description": "A WhatsApp Bot With Rich Anime Features.",
-    "main": "dist/chitoge.js",
+    "description": "A WhatsApp anime themed bot.",
+    "main": "dist/bnh.js",
     "scripts": {
         "build": "tsc -p .",
-        "start": "node dist/chitoge.js",
+        "start": "node dist/bnh.js",
         "lint": "eslint \"src/**/*.ts\"",
         "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
         "postinstall": "yarn run build"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ShineiIchijo/Chitoge.git"
+        "url": "git+https://github.com/Cyberkingcr7/bnhh.git"
     },
     "keywords": [
         "bot",
         "typescript",
         "whatsapp",
-        "chitoge"
+        "bnh"
     ],
-    "author": "Synthesized Infinity & Shinei Ichijo",
+    "author": "Synthesized Infinity & cyber",
     "license": "AGPL-3.0",
     "bugs": {
         "url": "https://github.com/ShineiIchijo/Chitoge/issues"
