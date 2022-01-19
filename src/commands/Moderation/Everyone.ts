@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
 const term = joined.trim() 
         
         return void (await M.reply(
-            `${term}\n\n`,
+            `${term}\n`,
             undefined,
             undefined,
             M.groupMetadata?.participants.map((user) => user.jid)
