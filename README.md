@@ -72,4 +72,4 @@ Button :
 ## 📄 License
 
 Distributed under the GNU AFFERO GENERAL PUBLIC License. See [LICENSE](/LICENSE)
-for more information.
+for more information
