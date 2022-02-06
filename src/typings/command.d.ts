@@ -34,3 +34,4 @@ export type TCategory =
     | 'category'
     | 'weeb'
     | 'nsfw'
+     | 'textmaker'
