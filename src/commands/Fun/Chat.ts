@@ -1,3 +1,5 @@
+/** @format */
+
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
@@ -9,7 +11,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'bnh',
             description: 'Chat with the Bot in group',
-            aliases: ['bot'],
+            aliases: ['chat'],
             category: 'fun',
             usage: `${client.config.prefix}bot (text)`,
             baseXp: 30
@@ -33,7 +35,7 @@ export default class Command extends BaseCommand {
                     return void M.reply(res.data.cnt)
                 })
                 .catch(() => {
-                    M.reply(`error...`)
+                    M.reply(`Type ${this.client.config.prefix}bnh then speak to it...\n `)
                 })
         } else {
             M.reply(`Chat Bot Url not set.`)
