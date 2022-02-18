@@ -5,7 +5,7 @@ import { IParsedArgs, ISimplifiedMessage } from '../../typings'
 import akaneko from "akaneko";
 import request from "../../lib/request";
 import { MessageType } from "@adiwajshing/baileys";
-// import { MessageType, Mimetype } from '@adiwajshing/baileys'
+// well import { MessageType, Mimetype } from '@adiwajshing/baileys'
 const w5botapi = require('w5-textmaker');
 
 export default class Command extends BaseCommand {
