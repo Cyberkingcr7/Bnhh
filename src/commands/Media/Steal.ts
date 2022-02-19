@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
 			command: "steal",
 			aliases: ["take"],
 			description: "Will format the given sticker.",
-			category: "media ",
+			category: "general",
 			usage: `${client.config.prefix}steal[tag_sticker]|pack|author`,
 			baseXp: 30,
 		});
