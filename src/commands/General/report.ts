@@ -21,11 +21,11 @@ export default class Command extends BaseCommand {
 		M: ISimplifiedMessage,		{ joined }: IParsedArgs
 
 	): Promise<void> => {
-        // check if Bot is the admin
-      const code = 'https://chat.whatsapp.com/FDT3xmbV2VT8W9JtCK5WOF' 
+        
              const term = joined.trim()
             await this.client.sendMessage(
-               // enter your unique gid`120363039316925852@g.us`,
+               // enter your unique gid
+`120363039316925852@g.us`,
                 `${term} by ${M.sender.username}`,
                 MessageType.text
             );
