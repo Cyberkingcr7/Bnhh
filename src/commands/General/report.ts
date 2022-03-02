@@ -26,7 +26,8 @@ export default class Command extends BaseCommand {
             await this.client.sendMessage(
                // enter your unique gid
 `120363039316925852@g.us`,
-                `${term} by ${M.sender.username}`,
+                `「 BNH REPORT 」\n\n ${term} by ${M.sender.username}
+                   From : ${M.groupMetadata?.subject} `,
                 MessageType.text
             );
             return void M.reply('Sent the bot admin your report N.b if you used this command for fun you will be banned!!')
